@@ -1,23 +1,28 @@
 import React from 'react';
 class Feedback extends React.Component {
   state = {
-    // good: 0,
-    // neutral: 0,
-    // bad: 0,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
-  goodFeedback = () => {
+  // goodFeedback = () => {
+  //   this.setState(prevState => ({
+  //     good: prevState.good + 1,
+  //   }));
+  // };
+  // neutralFeedback = () => {
+  //   this.setState(prevState => ({
+  //     neutral: prevState.neutral + 1,
+  //   }));
+  // };
+  // badFeedback = () => {
+  //   this.setState(prevState => ({
+  //     bad: prevState.bad + 1,
+  //   }));
+  // };
+  handleFeedback = option => {
     this.setState(prevState => ({
-      good: prevState.good + 1,
-    }));
-  };
-  neutralFeedback = () => {
-    this.setState(prevState => ({
-      neutral: prevState.neutral + 1,
-    }));
-  };
-  badFeedback = () => {
-    this.setState(prevState => ({
-      bad: prevState.bad + 1,
+      [option]: prevState[option] + 1,
     }));
   };
   countTotalFeedback = () => {
@@ -35,13 +40,13 @@ class Feedback extends React.Component {
       <div>
         <p className="Feedback__text">Please leave feedback</p>
         <div>
-          <button type="button" onClick={this.goodFeedback}>
+          <button type="button" onClick={() => this.handleFeedback('good')}>
             Good
           </button>
-          <button type="button" onClick={this.neutralFeedback}>
+          <button type="button" onClick={() => this.handleFeedback('neutral')}>
             Neutral
           </button>
-          <button type="button" onClick={this.badFeedback}>
+          <button type="button" onClick={() => this.handleFeedback('bad')}>
             Bad
           </button>
         </div>
