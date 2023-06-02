@@ -1,10 +1,10 @@
 .feedback__box {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Задайте желаемое расстояние между кнопками */
+  gap: 10px;
 }
 .button__feedback {
-  font-size: 24px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   transition: transform 250ms;

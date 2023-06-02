@@ -1,0 +1,12 @@
+.bad {
+  color: red;
+}
+.neutral {
+  color: rgb(128, 99, 5);
+}
+.good {
+  color: green;
+}
+.font20 {
+  font-size: 20px;
+}
