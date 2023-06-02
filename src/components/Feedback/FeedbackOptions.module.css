@@ -1,0 +1,28 @@
+.feedback__box {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Задайте желаемое расстояние между кнопками */
+}
+.button__feedback {
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  transition: transform 250ms;
+  border-radius: 4px;
+}
+
+.button__feedback:first-child {
+  background-color: green;
+}
+.button__feedback:nth-child(2) {
+  background-color: yellow;
+}
+
+.button__feedback:last-child {
+  background-color: red;
+}
+.button__feedback:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.1);
+}
