@@ -1,5 +1,4 @@
 import React from 'react';
-import css from './Statistics.module.css';
 import { Notification } from 'components/Notification/Notification';
 export const Statistics = ({
   good,
