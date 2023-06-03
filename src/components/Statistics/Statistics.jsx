@@ -10,9 +10,6 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => {
-  if (total === 0) {
-    return <Notification message="There is no feedback" />;
-  }
   return (
     <>
       <div className={classNames(css.font20)}>
