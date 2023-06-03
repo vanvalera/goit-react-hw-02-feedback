@@ -2,7 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
-import { Notification } from 'components/Notification/Notification';
 export const Statistics = ({
   good,
   neutral,
